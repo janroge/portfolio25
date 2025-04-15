@@ -16,19 +16,19 @@
           "title": "Hospital Web App",
           "technologies": ["React", "Javascript", "HTML", "CSS"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "image": "/public/images/hospital.png"
+          "image": "./images/hospital.png"
         },
         {
           "title": "Field Reporting App",
           "technologies": [ "Python", "Flask", "SQLAlchemy", "HTML", "Tailwind CSS", "JavaScript", "Google Authentication"],
           "description": "Field report management project for technical service companies, enabling technicians, supervisors, and administrators to create, edit, and track work reports.",
-          "image": "/public/images/report.png"
+          "image": "./images/report.png"
         },
         {
           "title": "Product Designer Portfolio",
           "technologies": ["React", "Vite", "JavaScript", "HTML", "CSS", "JSON", "Devicon", "Git"],
           "description": "Personal portfolio of a Product Designer built with React and Vite, featuring Lottie animations, reusable components, and multi-language support.",
-          "image": "/public/images/portfolio.png"
+          "image": "./images/portfolio.png"
         }
       ]
     },
@@ -51,19 +51,19 @@
           "title": "Hospital Web App",
           "technologies": ["React", "Javascript", "HTML", "CSS"],
           "description": "PWA completa desarrollada con React. Implementa manifest, Service Worker para caché, geolocalización y consumo de API, demostrando robustez y escalabilidad en entornos modernos.",
-          "image": "/public/images/hospital.png"
+          "image": "./images/hospital.png"
         },
         {
           "title": "Aplicacion Reporte de Campo",
           "technologies": ["Python", "Flask", "SQLAlchemy", "HTML", "Tailwind CSS", "JavaScript", "Google Authentication"],
           "description": "Proyecto de gestión de informes de campo para empresas de servicios técnicos, permitiendo a técnicos, supervisores y administradores crear, editar y rastrear reportes de trabajo.",
-          "image": "/public/images/report.png"
+          "image": "./images/report.png"
         },
         {
           "title": "Portafolio de Product Designer",
           "technologies": ["React", "Vite", "JavaScript", "HTML", "CSS", "JSON", "Devicon", "Git"],
           "description": "Portafolio personal de Product Designer desarrollado con React y Vite, que muestra animaciones Lottie, componentes reutilizables y soporte multi-idioma.",
-          "image": "/public/images/portfolio.png"
+          "image": "./images/portfolio.png"
         }
       ]
     },
