@@ -1,36 +1,35 @@
 /* src/components/Contact.css */
 .contact-section {
-    margin: 2rem auto;
-    padding: 2rem;
-    text-align: center;
-    background: var(--primary-color);
-    /*border-top: 1px solid var(--secondary-color);*/
-  }
-  
-  .contact-title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: var(--text-color);
-  }
-  
-  .contact-description {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-    color: var(--text-color);
-  }
-  
-  .contact-button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: var(--accent-color);
-    color: #fff;
-    font-size: 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: opacity 0.3s;
-  }
-  
-  .contact-button:hover {
-    opacity: 0.8;
-  }
-  
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  background: transparent;
+  border-top: 1px solid var(--secondary-color);
+}
+
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.contact-description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent-color);
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.contact-button:hover {
+  opacity: 0.8;
+}

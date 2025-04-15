@@ -7,7 +7,7 @@ function Footer({ footerText }) {
       <p>{footerText}</p>
       <div className="social-links">
         <a
-          href="https://www.linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/jrojasg/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -15,7 +15,7 @@ function Footer({ footerText }) {
         </a>
         <span className="separator">|</span>
         <a
-          href="https://www.behance.net/yourusername"
+          href="https://www.behance.net/janroge"
           target="_blank"
           rel="noopener noreferrer"
         >

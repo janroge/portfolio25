@@ -45,7 +45,7 @@ function App() {
       <Hero hero={siteData.hero} />
       <About about={siteData.about} />
       <Projects projectsData={siteData.projects} />
-      <Contact />
+      <Contact contact={siteData.contact} />
       <Footer footerText={siteData.footer} />
     </div>
   );

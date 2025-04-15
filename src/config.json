@@ -32,6 +32,13 @@
         }
       ]
     },
+    "contact": {
+      "title": "Contact",
+      "description": "If you would like more information or have any inquiries, feel free to reach out!",
+      "email": "jorge.rojas.guerrero@gmail.com",
+      "subject": "Contact from Portfolio",
+      "buttonLabel": "Send Email"
+    },
     "footer": "© 2025 Jorge Rojas. All rights reserved."
   },
   "es": {
@@ -66,6 +73,13 @@
           "image": "./images/portfolio.png"
         }
       ]
+    },
+    "contact": {
+      "title": "Contáctame",
+      "description": "Si deseas más información o tienes alguna consulta, ¡no dudes en contactarme!",
+      "email": "jorge.rojas.guerrero@gmail.com",
+      "subject": "Contacto desde el portafolio",
+      "buttonLabel": "Enviar Email"
     },
     "footer": "© 2025 Jorge Rojas. Todos los derechos reservados."
   }
