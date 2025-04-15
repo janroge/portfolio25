@@ -1,0 +1,50 @@
+/* src/components/Settings.css */
+.settings-panel {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /* Usamos la variable global para el color del texto */
+    color: var(--text-color);
+  }
+  
+  .settings-panel button {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--accent-color);
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .settings-panel button:hover {
+    opacity: 0.8;
+  }
+  
+  .accent-control {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  
+  .accent-control label {
+    margin-right: 0.3rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Estilos específicos para dark mode */
+  [data-theme="dark"] .settings-panel {
+    background: rgba(0, 0, 0, 0.0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    color: var(--text-color);
+  }
+  

@@ -1,0 +1,254 @@
+/* -----------------------
+   Reset y Box-sizing
+-------------------------- */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  /* -----------------------
+     Variables & Global Styles 
+  -------------------------- */
+  :root {
+    --primary-color: #ffffff;       /* Fondo para modo claro */
+    --secondary-color: #f8f9fa;       /* Fondo secundario claro */
+    --text-color: #212529;            /* Texto para modo claro */
+    --accent-color: #007bff;          /* Acento para modo claro */
+  }
+  
+  [data-theme="dark"] {
+    --primary-color: #121212;         /* Fondo muy oscuro para dark mode */
+    --secondary-color: #1e1e1e;       /* Fondo secundario oscuro */
+    --text-color: #f8f9fa;            /* Texto claro para dark mode */
+    --accent-color: #0d6efd;          /* Acento para dark mode */
+  }
+  
+  /* -----------------------
+     Global Styles
+  -------------------------- */
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--primary-color);
+    color: var(--text-color);
+  }
+  
+  /* Contenedor centralizado y con ancho máximo consistente */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* -----------------------
+     Botones
+  -------------------------- */
+  button {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--accent-color);
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* -----------------------
+     Panel de Configuración Superior
+  -------------------------- */
+  .settings-panel {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .accent-control {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  .accent-control label {
+    margin-right: 0.3rem;
+    font-size: 0.9rem;
+  }
+  
+  /* -----------------------
+     Hero Section con Imagen de Fondo
+  -------------------------- */
+  .hero-section {
+    position: relative;
+    margin: 1rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 400px;  /* Altura fija para consistencia */
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Pseudo-elemento para la imagen de fondo */
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/images/hero-bg.jpg") no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+  }
+  
+  /* Overlay para mejorar legibilidad */
+  .hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: rgba(255, 255, 255, 0.3);*/
+    backdrop-filter: blur(5px);
+    z-index: 2;
+  }
+  [data-theme="dark"] .hero-section::after {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Contenido del Hero */
+  .hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 1rem;
+    color: var(--text-color);
+  }
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  /* -----------------------
+     About Section con Fondo Similar a las Cards
+  -------------------------- */
+  .about-section {
+    margin: 2rem auto;
+    border-radius: 10px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    text-align: center;
+    max-width: 900px;
+  }
+  [data-theme="dark"] .about-section {
+    background: rgba(0, 0, 0, 0.85);
+    border: 1px solid #333;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  }
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .about-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* -----------------------
+     Projects Section (Cards)
+  -------------------------- */
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 2rem auto;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .project-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  [data-theme="dark"] .project-card {
+    background: #000;
+    border: 1px solid #333;
+  }
+  .project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(31, 38, 135, 0.5);
+  }
+  .project-card img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    object-position: top;
+  }
+  .project-content {
+    padding: 1rem;
+    text-align: left;
+  }
+  .project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  .project-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Pills para las tecnologías */
+  .tech-pills {
+    margin: 0.5rem 0;
+  }
+  .tech-pill {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.3rem 0.7rem;
+    margin: 0.2rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+  }
+  .tech-pill i {
+    margin-right: 0.3rem;
+  }
+  
+  /* -----------------------
+     Footer
+  -------------------------- */
+  footer {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+  

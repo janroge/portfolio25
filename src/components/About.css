@@ -1,0 +1,66 @@
+/* src/components/About.css */
+.about-section {
+  margin: 2rem auto;
+  padding: 0;                  /* Sin padding para un look muy limpio */
+  max-width: 900px;
+  text-align: center;
+  background: transparent;     /* Sin fondo */
+  border: none;                /* Sin borde */
+  box-shadow: none;            /* Sin sombra */
+}
+
+.about-title {
+  font-size: 1.6rem;           /* Tamaño de fuente sutil */
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.about-content-container {
+  position: relative;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  max-width: 700px;
+  margin: 0.5rem auto;
+}
+
+.about-content {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  margin: 0;
+}
+
+/* Overlay para sugerir contenido adicional cuando está colapsado */
+.fade-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: linear-gradient(transparent, var(--primary-color));
+}
+
+/* Botón para expandir/contraer el contenido */
+.expand-btn {
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.expand-btn:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+/* Forzamos transparencia en dark mode */
+[data-theme="dark"] .about-section {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}

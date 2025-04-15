@@ -1,0 +1,72 @@
+{
+  "en": {
+    "siteTitle": "Product Designer Portfolio",
+    "hero": {
+      "title": "Hello, I'm Jorge Rojas",
+      "subtitle": "Product Designer specialized in UX/UI and Digital Solutions"
+    },
+    "about": {
+      "title": "About Me",
+      "content": "I'm Jorge Rojas, a Product Designer with extensive experience in UX/UI design. I've developed digital solutions for sectors such as construction, retail, importation, and manufacturing. My focus lies in user research and human-centered design, which enables me to lead comprehensive projects with creativity and precision. My background in Industrial Design and further specialization in Product Design support my ability to create effective and aesthetically pleasing digital experiences."
+    },
+    "projects": {
+      "title": "Projects",
+      "list": [
+        {
+          "title": "Hospital Web App",
+          "technologies": ["React", "Javascript", "HTML", "CSS"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "image": "/public/images/hospital.png"
+        },
+        {
+          "title": "Field Reporting App",
+          "technologies": [ "Python", "Flask", "SQLAlchemy", "HTML", "Tailwind CSS", "JavaScript", "Google Authentication"],
+          "description": "Field report management project for technical service companies, enabling technicians, supervisors, and administrators to create, edit, and track work reports.",
+          "image": "/public/images/report.png"
+        },
+        {
+          "title": "Product Designer Portfolio",
+          "technologies": ["React", "Vite", "JavaScript", "HTML", "CSS", "JSON", "Devicon", "Git"],
+          "description": "Personal portfolio of a Product Designer built with React and Vite, featuring Lottie animations, reusable components, and multi-language support.",
+          "image": "/public/images/portfolio.png"
+        }
+      ]
+    },
+    "footer": "© 2025 Jorge Rojas. All rights reserved."
+  },
+  "es": {
+    "siteTitle": "Portafolio de Product Designer",
+    "hero": {
+      "title": "Hola, soy Jorge Rojas",
+      "subtitle": "Product Designer especializado en UX/UI y soluciones digitales"
+    },
+    "about": {
+      "title": "Sobre Mí",
+      "content": "Soy Jorge Rojas, Product Designer con amplia experiencia en diseño UX/UI. He desarrollado soluciones digitales para sectores como la construcción, el retail, la importación y la fabricación. Mi enfoque se centra en la investigación de usuarios y el diseño centrado en las personas, lo que me permite liderar proyectos integrales con creatividad y precisión. Mi formación en Diseño Industrial y mi especialización en Product Design respaldan mi capacidad para crear experiencias digitales efectivas y estéticamente atractivas."
+    },
+    "projects": {
+      "title": "Proyectos",
+      "list": [
+        {
+          "title": "Hospital Web App",
+          "technologies": ["React", "Javascript", "HTML", "CSS"],
+          "description": "PWA completa desarrollada con React. Implementa manifest, Service Worker para caché, geolocalización y consumo de API, demostrando robustez y escalabilidad en entornos modernos.",
+          "image": "/public/images/hospital.png"
+        },
+        {
+          "title": "Aplicacion Reporte de Campo",
+          "technologies": ["Python", "Flask", "SQLAlchemy", "HTML", "Tailwind CSS", "JavaScript", "Google Authentication"],
+          "description": "Proyecto de gestión de informes de campo para empresas de servicios técnicos, permitiendo a técnicos, supervisores y administradores crear, editar y rastrear reportes de trabajo.",
+          "image": "/public/images/report.png"
+        },
+        {
+          "title": "Portafolio de Product Designer",
+          "technologies": ["React", "Vite", "JavaScript", "HTML", "CSS", "JSON", "Devicon", "Git"],
+          "description": "Portafolio personal de Product Designer desarrollado con React y Vite, que muestra animaciones Lottie, componentes reutilizables y soporte multi-idioma.",
+          "image": "/public/images/portfolio.png"
+        }
+      ]
+    },
+    "footer": "© 2025 Jorge Rojas. Todos los derechos reservados."
+  }
+}

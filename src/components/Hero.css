@@ -1,0 +1,53 @@
+/* src/components/hero.css */
+.hero-section {
+  position: relative;
+  margin: 1rem auto;
+  padding: 2rem;
+  background: transparent !important;  /* Sin fondo */
+  border: none !important;             /* Sin borde */
+  box-shadow: none !important;         /* Sin sombra */
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Forzamos la eliminación de pseudo-elementos para que no se muestre ningún fondo */
+.hero-section::before,
+.hero-section::after {
+  display: none !important;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.hero-animation {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
