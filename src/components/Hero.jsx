@@ -1,7 +1,7 @@
 import React from "react";
 import Lottie from "lottie-react";
 import animationData from "../animations/hero-animation.json"; // Ajusta la ruta según corresponda
-import "./hero.css";
+import "./Hero.css";
 
 function Hero({ hero }) {
   return (
