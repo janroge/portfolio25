@@ -34,7 +34,7 @@ Este portafolio es una aplicación web desarrollada con React y Vite, diseñada 
 ## Demo y Despliegue
 
 El portafolio está desplegado en un servidor público y es accesible sin errores.  
-[Inserta aquí la URL de tu portafolio desplegado]
+https://jorgerojas.vercel.app/
 
 ---
 
